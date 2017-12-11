@@ -136,7 +136,7 @@ button{
 }
 .hide{
 	visibility: hidden;
-	display: none;
+	display: none !important;
 }
 /*Fontes e Padroes*/
 .MW1400{
@@ -188,7 +188,7 @@ button{
 }
 .tb-show{
 	display: none;
-	visibility:hidden;		
+	visibility:hidden;
 }
 /* /Fontes-e-Padroes */
 /* HEADER */
@@ -209,7 +209,8 @@ button{
     padding: 10px;
 }
 .icon-abril {
-    max-width: 20px;
+    max-height: 16px;
+    width: auto;
     margin: 0 auto;
 }
 .menu {
@@ -228,9 +229,30 @@ button{
     width: calc(100% - 220px);
     padding: 9px 60px 9px 0;
 }
+.menu-midia-box {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 15%;
+    padding: 1%;
+}
+.icon-mb {
+    font-size: 23px;
+    color: #FFF;
+    padding: 38px 0 39px;
+}
+.menu-item-box {
+    width: 85%;
+    padding: 1%;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.icon-abril > img {
+    max-height: 16px;
+    width: auto;
+}
 .menu-item {
     font-size: 16px;
-    /* width: 16%; */
 }
 .menu-item
  > i {
@@ -299,6 +321,7 @@ button{
     top: 0;
     width: 20%;
     padding: 5px 0;
+    color: #A4A4A4;
 }
 .assine-button {
     background: #FFF;
@@ -418,10 +441,18 @@ footer {
     margin: 50px auto;
 }
 /*MB-Settings*/
+@media (max-width: 1460px){
+    .menu-item-box {
+        width: 100% !important;
+        padding: 1%;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+    }
+}
 @media (max-width: 1070px){
 	.tb-show{
 		display: block;
-		visibility: visible;		
+		visibility: visible;
 	}
 	.tb-hide{
 		display: none;
@@ -469,6 +500,73 @@ footer {
 	    color: #FFF;
 	    justify-content: space-between;
 	    margin: 0 auto;
+	}
+	.logo {
+		margin: 0 auto;
+		height: 100px;
+		width: auto !important;
+	}
+	.pub-100 {
+		height: auto;
+		width:100%;
+		overflow: hidden;
+		position: relative;
+	}
+	div.pub-100 > a > img {
+		min-height: auto;
+		width: 100%;
+		position: relative;
+	}
+	.menu-item > i {
+    	margin: 0 0 0 auto;
+	}
+	.menu-item {
+	    margin: 0 auto;
+	    border-bottom: 1px solid #C91C1C;
+	    height: 50px;
+	    padding: 17px 5%;
+	}
+
+	.menu-item-box {
+	    background: #D51E20;
+	    position: absolute;
+	    top: 0;
+	    z-index: 99;
+	    padding: 1% 0 8%;
+	}
+
+	.Bg-change {
+	    background: #D51E20;
+	}
+
+	.logo > img {
+	    width: auto;
+	    height: 80px;
+	}
+	div#menu {
+		position: relative;
+	}
+
+	li.menu-item:last-child {
+		border: none;
+	}
+	div#search {
+		background: #d51e20;
+		padding: 40px 0;
+		position: absolute;
+		bottom: -100px;
+		z-index: 99;
+	}
+
+	.search {
+		width: calc(100% - 80px);
+		padding: 5px 0;
+		border: none;
+		margin: 0 40px 0 40px;
+	}
+
+	button.search-button.PA {
+		top: 40px;
 	}
 }
 /*MB-Settings*/ 

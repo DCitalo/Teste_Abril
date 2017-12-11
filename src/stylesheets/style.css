@@ -254,10 +254,9 @@ button{
 .menu-item {
     font-size: 16px;
 }
-.menu-item
- > i {
+.menu-item > i {
      margin:0 0 0 5px;
- }
+}
 .links-box{
 	background: #242424;
 	height: 30px;
@@ -296,7 +295,6 @@ button{
     border-left: 0;
     right: 0px;
     top: 0px;
-    /* transform: rotate(45deg); */
     background: linear-gradient(45deg, transparent 30%, transparent 30%),linear-gradient(-45deg, #242424 30%, transparent 30%),linear-gradient(225deg, #242424 30%, transparent 30%),linear-gradient(-210deg, transparent 30%, transparent 30%);
 	background: -webkit-linear-gradient(45deg, transparent 30%, transparent 30%),linear-gradient(-45deg, #242424 30%, transparent 30%),linear-gradient(225deg, #242424 30%, transparent 30%),linear-gradient(-210deg, transparent 30%, transparent 30%);
 }
@@ -312,9 +310,10 @@ button{
 }
 .search {
     width: calc(100% - 20px);
-    padding: 5px 0px;
+    padding: 5px 5px;
     border: none;
     margin: 0 0 0 20px;
+    height: 32px;
 }
 .search-button {
     right: 0px;
@@ -322,11 +321,13 @@ button{
     width: 20%;
     padding: 5px 0;
     color: #A4A4A4;
+    height: 32px;
 }
 .assine-button {
     background: #FFF;
     color: #ef1718;
     width: 100%;
+    font-size: 18px;
     padding: 5px 0px;
 }
 .assine-box {
@@ -390,7 +391,7 @@ button{
     top: 50%;
     transform: translateY(-50%);
 }
-div.pub-100 > a > img {
+.pub-100 > a > img {
     min-height: 600px;
     width: auto;
     left: 50%;
@@ -446,7 +447,7 @@ footer {
         width: 100% !important;
         padding: 1%;
         -webkit-justify-content: space-between;
-        justify-content: space-between;
+        		justify-content: space-between;
     }
 }
 @media (max-width: 1070px){
@@ -498,7 +499,8 @@ footer {
 	}
 	.menu {
 	    color: #FFF;
-	    justify-content: space-between;
+	    -webkit-justify-content: space-between;
+	    		justify-content: space-between;
 	    margin: 0 auto;
 	}
 	.logo {
@@ -512,7 +514,7 @@ footer {
 		overflow: hidden;
 		position: relative;
 	}
-	div.pub-100 > a > img {
+	.pub-100 > a > img {
 		min-height: auto;
 		width: 100%;
 		position: relative;
@@ -526,7 +528,6 @@ footer {
 	    height: 50px;
 	    padding: 17px 5%;
 	}
-
 	.menu-item-box {
 	    background: #D51E20;
 	    position: absolute;
@@ -534,41 +535,33 @@ footer {
 	    z-index: 99;
 	    padding: 1% 0 8%;
 	}
-
 	.Bg-change {
 	    background: #D51E20;
 	}
-
 	.logo > img {
 	    width: auto;
 	    height: 80px;
 	}
-	div#menu {
+	#menu {
 		position: relative;
 	}
-
-	li.menu-item:last-child {
+	.menu-item:last-child {
 		border: none;
 	}
-	div#search {
+	#search {
 		background: #d51e20;
 		padding: 40px 0;
 		position: absolute;
 		bottom: -100px;
 		z-index: 99;
 	}
-
 	.search {
 		width: calc(100% - 80px);
-		padding: 5px 0;
-		border: none;
 		margin: 0 40px 0 40px;
+		padding: 5px 20px;
 	}
-
-	button.search-button.PA {
+	.search-button {
 		top: 40px;
 	}
 }
 /*MB-Settings*/ 
-
-

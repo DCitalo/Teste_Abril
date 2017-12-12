@@ -514,9 +514,6 @@ footer {
 	    margin: 0 auto;
 	}
 	.logo {
-		margin: 0 auto;
-		height: 100px;
-		width: auto !important;
 	}
 	.pub-100 , .pub-50 {
 		height: auto;
@@ -549,8 +546,9 @@ footer {
 	    background: #D51E20;
 	}
 	.logo > img {
-	    width: auto;
-	    height: 80px;
+	max-width: 290px;
+	margin: 0 auto;
+	display: block;
 	}
 	#menu {
 		position: relative;

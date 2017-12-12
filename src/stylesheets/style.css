@@ -333,6 +333,11 @@ button{
 .assine-box {
     padding: 0 20px;
 }
+.pub-img > a > img, .pub-img-older > a > img {
+    height: 100%;
+    width: auto;
+    transform: translateX(-40%);
+}
 /* /HEADER */
 /* SECTION */
 .pub-100 {
@@ -570,6 +575,7 @@ footer {
 	}
 	.search-button {
 		top: 40px;
+	    padding: 5px 60px;
 	}
 	.pub-img {
 		position: relative;
